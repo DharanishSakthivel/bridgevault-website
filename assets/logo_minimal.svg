@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 92" role="img" aria-label="BridgeVault Technology — Logo">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&amp;family=Inter:wght@400&amp;display=swap');</style>
+    <linearGradient id="brand-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#0052CC"/>
+    </linearGradient>
+    <linearGradient id="brand-amber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0066FF" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- ARCH GATE MARK -->
+  <path
+    fill-rule="evenodd"
+    fill="url(#brand-blue)"
+    filter="url(#shadow)"
+    d="
+      M 8 84
+      L 8 48
+      A 36 36 0 0 1 80 48
+      L 80 84
+      Z
+      M 20 84
+      L 20 48
+      A 24 24 0 0 1 68 48
+      L 68 84
+      Z
+    "/>
+
+  <!-- Amber vault-lock bar inside the arch opening -->
+  <rect x="31" y="76" width="26" height="5" rx="2.5" fill="url(#brand-amber)"/>
+
+  <!-- Vertical separator rule -->
+  <line x1="100" y1="14" x2="100" y2="78" stroke="#E2E8F0" stroke-width="1.2"/>
+
+  <!-- WORDMARK "Bridge Vault" -->
+  <text
+    x="116" y="60"
+    font-family="'Outfit','Helvetica Neue',Arial,sans-serif"
+    font-size="44" font-weight="800" letter-spacing="-1">
+    <tspan fill="#0066FF">Bridge</tspan><tspan fill="#0F1729">Vault</tspan>
+  </text>
+
+  <!-- Accent line inbetween wordmark and technology -->
+  <rect x="117" y="66" width="230" height="2" rx="1" fill="url(#brand-amber)" opacity="0.85"/>
+
+  <!-- "TECHNOLOGY" sub-label -->
+  <text
+    x="117" y="82"
+    font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+    font-size="10.5" font-weight="400" letter-spacing="5.5"
+    fill="#4A5568">TECHNOLOGY</text>
+</svg>
