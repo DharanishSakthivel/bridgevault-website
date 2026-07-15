@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" role="img" aria-label="BridgeVault Technology LinkedIn Company Banner">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&amp;family=Inter:wght@300;400;500&amp;display=swap');</style>
+
+    <!-- Brand gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#020B1A"/>
+      <stop offset="50%"  stop-color="#030712"/>
+      <stop offset="100%" stop-color="#040E22"/>
+    </linearGradient>
+    <linearGradient id="blue-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#00C4CC"/>
+    </linearGradient>
+    <linearGradient id="fade-r" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0066FF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00C4CC" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="mark-glow-lg" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="28" in="SourceGraphic" result="bl"/>
+      <feMerge><feMergeNode in="bl"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="mark-glow-sm" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="8" in="SourceGraphic" result="bl2"/>
+      <feMerge><feMergeNode in="bl2"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="text-glow">
+      <feGaussianBlur stdDeviation="6" in="SourceGraphic" result="tg"/>
+      <feMerge><feMergeNode in="tg"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Blueprint grid pattern -->
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(0,102,255,0.055)" stroke-width="0.6"/>
+    </pattern>
+
+    <!-- Clip for ghost mark -->
+    <clipPath id="right-clip">
+      <rect x="780" y="0" width="804" height="396"/>
+    </clipPath>
+  </defs>
+
+  <!-- ═══ BACKGROUND ═══════════════════════════════════════════════ -->
+  <!-- Base dark space -->
+  <rect width="1584" height="396" fill="url(#bg-grad)"/>
+
+  <!-- Blueprint grid overlay -->
+  <rect width="1584" height="396" fill="url(#grid)"/>
+
+  <!-- Left zone: subtle blue radial bloom -->
+  <ellipse cx="280" cy="198" rx="480" ry="300"
+    fill="url(#fade-r)" opacity="0.8"/>
+
+  <!-- Top-left corner accent radial -->
+  <ellipse cx="0" cy="0" rx="300" ry="200"
+    fill="rgba(0,102,255,0.06)"/>
+
+  <!-- Bottom-right dim bloom -->
+  <ellipse cx="1584" cy="396" rx="400" ry="280"
+    fill="rgba(0,196,204,0.04)"/>
+
+  <!-- ═══ TOP ACCENT BAR ════════════════════════════════════════════ -->
+  <rect x="0" y="0" width="1584" height="4"
+    fill="url(#blue-cyan)"/>
+
+  <!-- ═══ BOTTOM ACCENT BAR ════════════════════════════════════════ -->
+  <rect x="0" y="393" width="1584" height="3"
+    fill="url(#blue-cyan)" opacity="0.5"/>
+
+  <!-- ═══ VERTICAL SEPARATOR (left | right zones) ══════════════════ -->
+  <line x1="760" y1="40" x2="760" y2="356"
+    stroke="rgba(0,102,255,0.18)" stroke-width="1"
+    stroke-dasharray="4 6"/>
+
+  <!-- ═══ GHOST ARCH GATE MARK — RIGHT SIDE (massive, atmospheric) ═══ -->
+  <g clip-path="url(#right-clip)" opacity="0.08" filter="url(#mark-glow-lg)" transform="translate(1020, 24) scale(3.6)">
+    <path fill-rule="evenodd" fill="url(#blue-cyan)" d="M 8 84 L 8 48 A 36 36 0 0 1 80 48 L 80 84 Z M 20 84 L 20 48 A 24 24 0 0 1 68 48 L 68 84 Z"/>
+    <rect x="31" y="76" width="26" height="5" rx="2.5" fill="#FBBF24"/>
+  </g>
+  
+  <g clip-path="url(#right-clip)" opacity="0.04" transform="translate(1220, 90) scale(2.4)">
+    <path fill-rule="evenodd" fill="#00C4CC" d="M 8 84 L 8 48 A 36 36 0 0 1 80 48 L 80 84 Z M 20 84 L 20 48 A 24 24 0 0 1 68 48 L 68 84 Z"/>
+    <rect x="31" y="76" width="26" height="5" rx="2.5" fill="#F59E0B"/>
+  </g>
+
+  <!-- ═══ DECORATIVE ELEMENTS — RIGHT ══════════════════════════════ -->
+  <!-- Corner bracket marks (top-right) -->
+  <path d="M 1530 28 L 1556 28 L 1556 54" fill="none"
+    stroke="rgba(0,102,255,.3)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 1530 368 L 1556 368 L 1556 342" fill="none"
+    stroke="rgba(0,196,204,.3)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Dot cluster top-right -->
+  <circle cx="1480" cy="40"  r="2.5" fill="#0066FF" opacity="0.4"/>
+  <circle cx="1494" cy="40"  r="2.5" fill="#00C4CC" opacity="0.3"/>
+  <circle cx="1508" cy="40"  r="2.5" fill="#0066FF" opacity="0.2"/>
+  <circle cx="1480" cy="56"  r="2"   fill="#00C4CC" opacity="0.25"/>
+  <circle cx="1494" cy="56"  r="2"   fill="#0066FF" opacity="0.2"/>
+
+  <!-- Horizontal data-stream lines (right zone) -->
+  <line x1="820" y1="100" x2="1040" y2="100"
+    stroke="rgba(0,102,255,.12)" stroke-width="1"/>
+  <line x1="850" y1="115" x2="980"  y2="115"
+    stroke="rgba(0,196,204,.08)" stroke-width="0.8"/>
+  <line x1="820" y1="296" x2="1040" y2="296"
+    stroke="rgba(0,102,255,.12)" stroke-width="1"/>
+  <line x1="850" y1="281" x2="980"  y2="281"
+    stroke="rgba(0,196,204,.08)" stroke-width="0.8"/>
+
+  <!-- ═══ LEFT CONTENT ZONE ═════════════════════════════════════════ -->
+
+  <!-- Small arch mark icon (near logo position) -->
+  <g transform="translate(68, 88) scale(1)" filter="url(#mark-glow-sm)">
+    <path fill-rule="evenodd" fill="url(#blue-cyan)" d="M 8 84 L 8 48 A 36 36 0 0 1 80 48 L 80 84 Z M 20 84 L 20 48 A 24 24 0 0 1 68 48 L 68 84 Z"/>
+    <rect x="31" y="76" width="26" height="5" rx="2.5" fill="#FBBF24"/>
+  </g>
+
+  <!-- Company name: BRIDGE -->
+  <text x="68" y="200"
+    font-family="'Outfit','Helvetica Neue',Arial,sans-serif"
+    font-size="88" font-weight="900" letter-spacing="-3"
+    fill="#0066FF" filter="url(#text-glow)">BRIDGE</text>
+
+  <!-- Company name: VAULT -->
+  <text x="68" y="284"
+    font-family="'Outfit','Helvetica Neue',Arial,sans-serif"
+    font-size="88" font-weight="900" letter-spacing="-3"
+    fill="#FFFFFF">VAULT</text>
+
+  <!-- TECHNOLOGY small label -->
+  <text x="72" y="308"
+    font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+    font-size="11" font-weight="400" letter-spacing="8"
+    fill="rgba(255,255,255,0.35)">TECHNOLOGY</text>
+
+  <!-- Gradient accent underline under TECHNOLOGY -->
+  <rect x="72" y="314" width="80" height="1.5" rx="0.75"
+    fill="url(#blue-cyan)" opacity="0.5"/>
+
+  <!-- Tagline -->
+  <text x="68" y="346"
+    font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+    font-size="16" font-weight="300" letter-spacing="0.3"
+    fill="rgba(255,255,255,0.45)">Bridging Talent. Vaulting Innovation.</text>
+
+  <!-- ═══ SERVICE PILLS ══════════════════════════════════════════════ -->
+  <!-- Pill 1: Digital Engineering -->
+  <rect x="68" y="358" width="188" height="26" rx="13"
+    fill="rgba(0,102,255,0.12)" stroke="rgba(0,102,255,0.35)" stroke-width="1"/>
+  <text x="162" y="376" text-anchor="middle"
+    font-family="'Inter',Arial,sans-serif" font-size="10.5" font-weight="500"
+    letter-spacing="0.3" fill="rgba(255,255,255,0.75)">Digital Engineering</text>
+
+  <!-- Pill 2: Talent Solutions -->
+  <rect x="266" y="358" width="188" height="26" rx="13"
+    fill="rgba(0,196,204,0.1)" stroke="rgba(0,196,204,0.3)" stroke-width="1"/>
+  <text x="360" y="376" text-anchor="middle"
+    font-family="'Inter',Arial,sans-serif" font-size="10.5" font-weight="500"
+    letter-spacing="0.3" fill="rgba(255,255,255,0.75)">Talent Solutions</text>
+
+  <!-- Pill 3: Digital Operations -->
+  <rect x="464" y="358" width="188" height="26" rx="13"
+    fill="rgba(0,102,255,0.08)" stroke="rgba(0,102,255,0.2)" stroke-width="1"/>
+  <text x="558" y="376" text-anchor="middle"
+    font-family="'Inter',Arial,sans-serif" font-size="10.5" font-weight="500"
+    letter-spacing="0.3" fill="rgba(255,255,255,0.6)">Digital Operations</text>
+
+  <!-- ═══ CONTACT ROW (bottom-left) ════════════════════════════════ -->
+  <!-- Email icon circle -->
+  <circle cx="84" cy="46" r="14" fill="rgba(0,102,255,.12)"
+    stroke="rgba(0,102,255,.25)" stroke-width="1"/>
+  <text x="84" y="50" text-anchor="middle"
+    font-family="Arial" font-size="10" fill="rgba(0,102,255,.9)">✉</text>
+  <text x="106" y="50"
+    font-family="'Inter',Arial,sans-serif" font-size="11.5" font-weight="400"
+    fill="rgba(255,255,255,.5)">dharanishsakthivel@outlook.com</text>
+
+  <!-- WhatsApp circle -->
+  <circle cx="370" cy="46" r="14" fill="rgba(0,196,204,.1)"
+    stroke="rgba(0,196,204,.25)" stroke-width="1"/>
+  <text x="370" y="50" text-anchor="middle"
+    font-family="Arial" font-size="10" fill="rgba(0,196,204,.9)">💬</text>
+  <text x="392" y="50"
+    font-family="'Inter',Arial,sans-serif" font-size="11.5" font-weight="400"
+    fill="rgba(255,255,255,.5)">WhatsApp: +91 8190044198</text>
+
+  <!-- Top-left bracket marks -->
+  <path d="M 28 22 L 28 46" fill="none"
+    stroke="rgba(0,102,255,.4)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 28 22 L 52 22" fill="none"
+    stroke="rgba(0,102,255,.4)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 28 374 L 28 350" fill="none"
+    stroke="rgba(0,196,204,.35)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 28 374 L 52 374" fill="none"
+    stroke="rgba(0,196,204,.35)" stroke-width="2" stroke-linecap="round"/>
+</svg>
